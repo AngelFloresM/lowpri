@@ -1,6 +1,6 @@
 # LowPri
 
-LowPri is a personal Scrapper app that check Items in online stores (right now just [CyberPuerta](www.cyberpuerta.mx)), returning essential information about an specific item scrapped.
+LowPri is a personal Scrapper app that check Items in online stores (right now just [CyberPuerta](https://www.cyberpuerta.mx)), returning essential information about an specific item scrapped.
 
 ## Notes
 
