@@ -8,8 +8,6 @@ const { cyberPuertaScrap } = require("./scrapper")
 app.use(express.json())
 app.use(cors())
 
-// Not get for now
-
 app.get("/", (req, res) => {
 	res.send("This is working")
 })
@@ -20,6 +18,4 @@ app.post("/", async (req, res) => {
    res.json(product)
 })
 
-app.listen(PORT, () => {
-   console.log("Server running")
-})
+app.listen(PORT)
