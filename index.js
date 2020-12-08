@@ -3,7 +3,7 @@ const cors = require("cors")
 const app = express()
 
 const PORT = process.env.PORT || 8080
-const { cyberpuertaScrap } = require("./scrapper")
+const { cyberPuertaScrap } = require("./scrapper")
 
 app.use(express.json())
 app.use(cors())
@@ -20,7 +20,7 @@ app.use(cors())
 
 app.post("/", async (req, res) => {
 	const { link } = req.body
-	const product = await cyberpuertaScrap(link)
+	const product = await cyberPuertaScrap(link)
    res.json(product)
 })
 
