@@ -8,13 +8,15 @@ const { cyberpuertaScrap } = require("./scrapper")
 app.use(express.json())
 app.use(cors())
 
-app.get("/", async (req, res) => {
-	res.send("This is working")
-	const { link } = req.body
-	console.log(req.body)
-	// const product = await cyberpuertaScrap(link)
-   // res.json(product)
-})
+// Not get for now
+
+// app.get("/", async (req, res) => {
+// 	res.send("This is working")
+// 	const { link } = req.body
+// 	console.log(req.body)
+// 	// const product = await cyberpuertaScrap(link)
+//    // res.json(product)
+// })
 
 app.post("/", async (req, res) => {
 	const { link } = req.body
