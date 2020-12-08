@@ -1,11 +1,16 @@
 const puppeteer = require("puppeteer")
 // const { ItemModel } = require("./mongo/mongo") // MongoDB Model
 
-
 // Scrapping from CyberPuerta.mx
 
 const cyberPuertaScrap = async link => {
-   const browser = await puppeteer.launch()
+   const chromeOptions = {
+      headless: true,
+      defaultViewport: null,
+      args: ["--incognito", "--no-sandbox", "--single-process", "--no-zygote"]
+   }
+
+   const browser = await puppeteer.launch(chromeOptions)
    const page = await browser.newPage()
 
    await page.goto(link)
@@ -14,9 +19,9 @@ const cyberPuertaScrap = async link => {
       const productDiscountedPrice = document.querySelector(".priceText")
       const productOriginalPrice = document.querySelector("del")
       const productImage = document.querySelector("#emzoommainpic")
-      
+
       const product = {}
-      
+
       if (productName && productImage) {
          product.name = productName.innerHTML.split("―")[0]
          product.image = {
@@ -26,7 +31,7 @@ const cyberPuertaScrap = async link => {
          if (productOriginalPrice) {
             product.originalPrice = productOriginalPrice.innerHTML
             product.discountedPrice = productDiscountedPrice.innerHTML
-         }else{
+         } else {
             product.originalPrice = productDiscountedPrice.innerHTML
          }
          return product
@@ -38,7 +43,7 @@ const cyberPuertaScrap = async link => {
    })
 
    await page.close()
-   
+
    return product
 }
 
