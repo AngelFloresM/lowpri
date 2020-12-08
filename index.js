@@ -10,7 +10,7 @@ app.use(cors())
 
 // Not get for now
 
-app.get("/", async (req, res) => {
+app.get("/", (req, res) => {
 	res.send("This is working")
 })
 
