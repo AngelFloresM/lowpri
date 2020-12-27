@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 app.post("/", async (req, res) => {
 	const { link } = req.body
 	const product = await cyberPuertaScrap(link)
+	res.set("Access-Control-Allow-Origin", "*")
    res.json(product)
 })
 
