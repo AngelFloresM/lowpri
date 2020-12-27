@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 8080
 const { cyberPuertaScrap } = require("./scrapper")
 
 app.use(express.json())
-app.use(cors({origin: "*"}))
+app.use(cors()
 
 app.get("/", (req, res) => {
 	res.send("This is working")
