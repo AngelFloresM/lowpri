@@ -4,52 +4,52 @@ const puppeteer = require("puppeteer")
 // Scrapping from CyberPuerta.mx
 
 const cyberPuertaScrap = async link => {
-   const chromeOptions = {
-      headless: true,
-      defaultViewport: null,
-      args: ["--incognito", "--no-sandbox", "--single-process", "--no-zygote"]
-   }
+  const chromeOptions = {
+    headless: true,
+    defaultViewport: null,
+    args: ["--incognito", "--no-sandbox", "--single-process", "--no-zygote"]
+  }
 
-   const browser = await puppeteer.launch(chromeOptions)
-   const page = await browser.newPage()
+  const browser = await puppeteer.launch(chromeOptions)
+  const page = await browser.newPage()
 
-   await page.goto(link)
-   const product = await page.evaluate(() => {
-      const productName = document.querySelector(".detailsInfo_right_title")
-      const productDiscountedPrice = document.querySelector(".priceText")
-      const productOriginalPrice = document.querySelector("del")
-      const productImage = document.querySelector("#emzoommainpic")
+  await page.goto(link)
+  const product = await page.evaluate(() => {
+    const productName = document.querySelector(".detailsInfo_right_title")
+    const productDiscountedPrice = document.querySelector(".priceText")
+    const productOriginalPrice = document.querySelector("del")
+    const productImage = document.querySelector("#emzoommainpic")
 
-      const product = {}
+    const product = {}
 
-      if (productName && productImage) {
-         product.name = productName.innerHTML.split("―")[0]
-         product.image = {
-            URL: productImage.children[0].getAttribute("src"),
-            alt: productImage.children[0].getAttribute("alt")
-         }
-         if (productOriginalPrice) {
-            product.originalPrice = productOriginalPrice.innerHTML
-            product.discountedPrice = productDiscountedPrice.innerHTML
-         } else {
-            product.originalPrice = productDiscountedPrice.innerHTML
-         }
-         return product
-      } else {
-         return {
-            errMessage: "Item no encontrado ó URL invalida"
-         }
+    if (productName && productImage) {
+      product.name = productName.innerHTML.split("―")[0]
+      product.image = {
+        URL: productImage.children[0].getAttribute("src"),
+        alt: productImage.children[0].getAttribute("alt")
       }
-   })
+      if (productOriginalPrice) {
+        product.originalPrice = productOriginalPrice.innerHTML
+        product.discountedPrice = productDiscountedPrice.innerHTML
+      } else {
+        product.originalPrice = productDiscountedPrice.innerHTML
+      }
+      return product
+    } else {
+      return {
+        errMessage: "Item no encontrado ó URL invalida"
+      }
+    }
+  })
 
-   await page.close()
+  await page.close()
 
-   return product
+  return product
 }
 
 module.exports = {
-   // amazonScrap,
-   cyberPuertaScrap
+  // amazonScrap,
+  cyberPuertaScrap
 }
 
 // Scrapping from Amazon.com.mx

@@ -1,0 +1,137 @@
+[33mcommit 688fcb928f7d29dcb95c1cf61d8d4c2ef236624b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Sun Dec 27 11:13:44 2020 -0700
+
+    CORS
+
+[33mcommit a28f69f11440bb65fb24f3717c84253c6c9ab774[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Sat Dec 26 22:19:59 2020 -0700
+
+    CORS
+
+[33mcommit ae151e4fab74da94b1a22efccabd90b71ba79836[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Sat Dec 26 22:19:11 2020 -0700
+
+    CORS
+
+[33mcommit bbb743670ed61b8d482bb71791b113d67f470aec[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Sat Dec 26 22:12:28 2020 -0700
+
+    CORS
+
+[33mcommit a2346e7f33bbbb82a39d8ea680448bbfed821326[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Sat Dec 12 13:35:02 2020 -0700
+
+    Adding CORS
+
+[33mcommit ceb59a063d14b5e7aaa91f78d5c4218aa6490363[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 13:18:34 2020 -0600
+
+    CORS options
+
+[33mcommit 975b207425bc4c04503b2919bd9a64fa1cfaac88[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 13:17:11 2020 -0600
+
+    CORS options
+
+[33mcommit 997eebffc134410547c5be4b2ec6c089813a6a0a[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:47:36 2020 -0600
+
+    adding notes
+
+[33mcommit ea7168eb9c43782bde46e9ba93a0324296311e21[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:39:26 2020 -0600
+
+    Add puppetter/heroku options
+
+[33mcommit e228f278b9a2774c7bcecc0cb45a8923eb6442c4[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:31:30 2020 -0600
+
+    Checking CORS err
+
+[33mcommit 3c058c5e98fab91e085edcfecf2e7b7644691a23[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:28:44 2020 -0600
+
+    Checking CORS err
+
+[33mcommit ef36251361ac1ccb2367e8e0e8a43ae31a98952e[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:22:48 2020 -0600
+
+    updating dependencies
+
+[33mcommit 5890546f3b9d01780a9cceba621e6fad4c7fd6f9[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:18:42 2020 -0600
+
+    Some
+
+[33mcommit 592513531e1cab08628bfd9c593b073f69e92e5c[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:14:10 2020 -0600
+
+    Add Procfile
+
+[33mcommit 44cd11f3fc5c0f03c0c00005191bfcd069352a1c[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:07:31 2020 -0600
+
+    Simple GET added
+
+[33mcommit 7db312381e1db716c31734e86c89eb8a0d15cbba[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 12:02:33 2020 -0600
+
+    Not GET for now
+
+[33mcommit 167067422ac087390a941e444f01405f2665cfe4[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 11:56:30 2020 -0600
+
+    Not GET for now
+
+[33mcommit 41b0e7843f5f3713f97fe2418e51d852fa11788c[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 11:51:05 2020 -0600
+
+    adding README
+
+[33mcommit 3abed91c4b92e45177bdc6f11864be5973b01eb6[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 11:50:21 2020 -0600
+
+    adding README
+
+[33mcommit f26b69348f7ca1f9cc38f5b6f20a25323d3aba73[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 11:49:36 2020 -0600
+
+    adding README
+
+[33mcommit 30f402ed1da0a1b4a18021542f00b91c278173c1[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 11:48:56 2020 -0600
+
+    adding README
+
+[33mcommit ad486c3cfc9105c766f217de9dfac45665775b8f[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 11:42:51 2020 -0600
+
+    adding README
+
+[33mcommit 16f4c9465e4712c7c36c695fb7a1c8abbf06ffd8[m
+Author: Ange Flores Moreno <angelflores992@gmail.com>
+Date:   Tue Dec 8 11:40:13 2020 -0600
+
+    first commit
